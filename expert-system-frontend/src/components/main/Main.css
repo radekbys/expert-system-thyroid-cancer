@@ -3,35 +3,39 @@
   margin: auto;
   margin-top: 4rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.numerical-data {
-  border: solid rgba(80, 0, 150, 0.4) 2px;
-  margin: 0.1rem;
-  display: block;
+.data-box {
+  margin: 0.2rem 0rem 0.2rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  width: 100%;
 }
 
-.numerical-data label {
-  margin: 1rem;
+.data-box h3 {
+  margin-right: 100%;
+  margin-bottom: 0.3rem;
+}
+
+.data-box label {
+  margin: 0.4rem 1rem 0.4rem 0.2rem;
   display: block;
   font-family: sans-serif;
   position: relative;
 }
 
-.numerical-data input {
-  left: 6.5rem;
-  position: absolute;
-  left: 6.5rem;
+.run-prediction-button {
+  font-size: 1.5rem;
+  box-shadow: inset;
 }
 
 @media screen and (min-width: 48rem) {
   #main {
     width: 48rem;
-  }
-
-  .numerical-data {
-    padding-left: 8rem;
+    font-size: larger;
   }
 }

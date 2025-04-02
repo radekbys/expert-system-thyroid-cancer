@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import './Main.css'
+import '../dataBox/dataBox.css'
 import Ethnicity from '../dataBox/ethnicity/Ethnicity'
 import Gender from '../dataBox/gender/Gender'
 import NumericalData from '../dataBox/numericalData/NumericalData'
@@ -20,11 +21,14 @@ export default function Main () {
     noduleSize: undefined
   })
 
-  const [riskFactors, setRiskFactors] = useState<IRiskFactors | undefined>(
-    undefined
-  )
-
-  console.log(gender, ethnicity, numericalData, riskFactors)
+  const [riskFactors, setRiskFactors] = useState<IRiskFactors>({
+    diabetes: false,
+    familyHistory: false,
+    obesity: false,
+    iodineDeficiency: false,
+    radiationExposure: false,
+    smoking: false
+  })
 
   return (
     <main id='main'>
@@ -34,7 +38,7 @@ export default function Main () {
         numericalData={numericalData}
       />
       <Ethnicity setEthnicity={setEthnicity} />
-      <RiskFactors setRiskFactors={setRiskFactors} />
+      <RiskFactors setRiskFactors={setRiskFactors} riskFactors={riskFactors} />
       <button className='run-prediction-button'>Predict Severity</button>
     </main>
   )

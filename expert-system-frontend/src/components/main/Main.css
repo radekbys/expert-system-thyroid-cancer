@@ -8,26 +8,6 @@
   justify-content: center;
 }
 
-.data-box {
-  margin: 0.2rem 0rem 0.2rem 0rem;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-.data-box h3 {
-  margin-right: 100%;
-  margin-bottom: 0.3rem;
-}
-
-.data-box label {
-  margin: 0.4rem 1rem 0.4rem 0.2rem;
-  display: block;
-  font-family: sans-serif;
-  position: relative;
-}
-
 .run-prediction-button {
   font-size: 1.5rem;
   box-shadow: inset;

@@ -1,4 +1,4 @@
-export default function RiskFactors () {
+export default function RiskFactors ({ setRiskFactors }) {
   return (
     <div className='risk-factors data-box'>
       <h3>{'Risk\u00A0Factors'}</h3>

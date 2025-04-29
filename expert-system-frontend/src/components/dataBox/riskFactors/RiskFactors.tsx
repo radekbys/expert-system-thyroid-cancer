@@ -13,7 +13,6 @@ export default function RiskFactors ({
     event: React.ChangeEvent<HTMLInputElement>,
     key: keyof IRiskFactors
   ) => {
-    console.log(event.target.value)
     let value: boolean = event.target.checked
 
     setRiskFactors(

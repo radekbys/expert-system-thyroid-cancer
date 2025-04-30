@@ -13,9 +13,30 @@
   box-shadow: inset;
 }
 
+.run-prediction-button {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  flex-basis: 100%;
+  background-color: rgb(250, 164, 200);
+  border-radius: 1rem;
+  border-color: brown;
+  border-width: 0.2rem;
+  padding: 0.5rem;
+}
+
+.severity_div {
+  margin: auto;
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 48rem) {
   #main {
     width: 48rem;
     font-size: larger;
+  }
+
+  .run-prediction-button {
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
 }

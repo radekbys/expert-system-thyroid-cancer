@@ -66,8 +66,8 @@ export default function Main () {
         Predict Severity
       </button>
       {severity && (
-        <div>
-          <h2>{severity}</h2>
+        <div className='severity_div'>
+          <h2>Severity: {severity}</h2>
         </div>
       )}
     </main>
